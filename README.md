@@ -8,6 +8,11 @@ A detailed description of each cluster and cell type can be found [here](https:/
 
 Scripts to generate the network graphs are [here](https://github.com/hamrhein/mouse_embryo)
 
+Explore the data interactively in the UCSC Cell Browser:
+
+- [Bulk RNA-seq data browser](https://cells-test.gi.ucsc.edu/?ds=mouse-encode-rna&layout=3)
+- [Limb cell atlas data browser](https://cells.ucsc.edu/?ds=mouse-limb)
+
 # Mouse tissue development bulk RNA-seq co-expression clusters
 
 [1 - Keratin](He_2020_ENCODE3_RNA/GeneLists/Bulk%20Cluster%201.txt)
