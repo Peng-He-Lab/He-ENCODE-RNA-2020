@@ -13,6 +13,59 @@ Explore the data interactively in the UCSC Cell Browser:
 - [Bulk RNA-seq data browser](https://cells-test.gi.ucsc.edu/?ds=mouse-encode-rna&layout=3)
 - [Limb cell atlas data browser](https://cells.ucsc.edu/?ds=mouse-limb)
 
+# UCSC Genome Browser track hubs (C1 mouse development paper)
+
+These are UCSC Genome Browser track hubs generated during the C1 mouse development paper work (original compilation by Diane Trout). Opening any link should launch UCSC with the hub pre-loaded.
+
+## Annotation track hubs
+
+- [GENCODE M4](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_combined/M4/hub.txt): GENCODE M4 exon annotations.
+- [IDEAS regions](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_combined/ideas_regions/hub.txt): IDEAS regions (0.2 threshold).
+
+## C1 track hubs
+
+- [C1 aggregated by cluster](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_combined/C1_cluster_aggregates/c1_cluster_aggregates.hub.txt): C1 cells grouped by cluster and merged to one BAM per cluster; depths normalized by total reads per million.
+- [920 cell clusters](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_timecourse/paper_by_cluster/paper_by_cluster.hub.txt): smaller C1 clusters as one cell per track.
+- [920 cell Mesenchyme](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_timecourse/paper_by_mesenchyme/paper_by_cluster_mesenchyme.hub.txt): mesenchyme C1 cluster as one cell per track (very large hub).
+- [920 cells perichondrium](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_timecourse/paper_by_perichondrium/paper_by_cluster_perichondrium.hub.txt): perichondrium C1 cluster as one cell per track.
+- [920 cells cluster, largest clusters capped at 30 cells](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_timecourse/subsample_by_cluster/subsample_by_cluster.hub.txt): one cell per track; largest clusters capped at 30 cells.
+- [35 cell subset](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/peng_clustering_35cells/C1_peng_clustering_35cells.hub.txt): subset of “peng clustering 35 cells” including green/red/dark red/yellow/orange clusters (Muscle 1/2/3, EMP, Macrophage).
+
+## 10x track hubs
+
+- [10x muscle cluster aggregate](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_combined/10x_tracks/hub.txt): 10x muscle clusters and proximal mesenchyme including all reads from the cell-barcode filtered 10x runs.
+- [10x muscle cluster aggregate (UMIs removed)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_mouse_limb_combined/10x_tracks/cb_ub_chr_start_hub.txt): collapses reads with the same (cell barcode, molecular barcode, chromosome, start). This is more permissive than Cell Ranger’s UMI counting rules (see note below).
+
+## PacBio track hubs
+
+- [Shredded Sequel long reads](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/pac-bio-umi-search/sequel-shred.hub.txt): PacBio Sequel reads shredded into 100 bp reads and mapped with the ENCODE M4 STAR/RSEM pipeline.
+- [PacBio (UCI collection)](https://genome.ucsc.edu/cgi-bin/hgTracks?hubUrl=http://crick.bio.uci.edu/ENCODE-PacBio/hub.txt&genome=mm10): collection of PacBio reads hosted by UCI (hub created by Dana).
+
+## Additional annotation hubs
+
+- [ENCODE Candidate Regulatory Elements (mm10)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://screen.encodeproject.org/api/ucsc_trackhub/9ec89a89-49f8-4304-8f43-f53ac55ecfb0/hub_2.txt): ENCODE cCREs from SCREEN.
+- [Hub (search: ChIP-seq Bing Ren, UCSD limb H3K27)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=https://www.encodeproject.org/batch_hub/type=Experiment,,assembly=mm10,,organ_slims=limb,,lab.title=Bing+Ren,+UCSD,,assay_title=ChIP-seq,,searchTerm=H3K27/hub.txt): (empty) H3K27 tracks from ENCODE portal batch hub.
+- [Hub (search: ChIP-seq Bing Ren, UCSD limb H3K4me3)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=https://www.encodeproject.org/batch_hub/type=Experiment,,assembly=mm10,,organ_slims=limb,,lab.title=Bing+Ren,+UCSD,,assay_title=ChIP-seq,,searchTerm=H3K4me3/hub.txt): (empty) H3K4me3 tracks from ENCODE portal batch hub.
+- [Hub (search: DNase-seq ENCODE3 limb DNase)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=https://www.encodeproject.org/batch_hub/searchTerm=limb+DNase,,type=Experiment,,assay_title=DNase-seq,,award.rfa=ENCODE3,,assembly=mm10/hub.txt): limb DNase tracks from ENCODE portal batch hub.
+
+## Gigio transfection hub
+
+- [Gigio Transfection Track](https://genome.ucsc.edu/cgi-bin/hgTracks?hubUrl=http://woldlab.caltech.edu/~diane/encode3-transfection/hub.txt&genome=mm10): includes some tracks hosted by Peng; previously included ENCODE H3K27 marks organized by Georgi but those links later broke after directory reorganization.
+
+## Tracks deemed misleading
+
+- [920 cells C1 clusters aggregated (misleading)](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://woldlab.caltech.edu/~diane/C1_peng_20180710_cluster_bigwigs/C1_peng_20180710_cluster.hub.txt): built by summing bedgraphs across all cells in a cluster, which skews normalized values by cluster size.
+
+## Note on Cell Ranger UMI counting (for interpreting “UMIs removed” tracks)
+
+Per 10x Genomics (“Which reads are considered for UMI counting by Cell Ranger?”), Cell Ranger UMI counting considers reads with valid UMI + valid 10x barcode, and additionally requires:
+
+- MAPQ 255 (STAR uniquely mapped)
+- maps to exactly one gene (GX tag)
+- overlaps an exon by ≥50% consistent with annotated splice junctions and strand annotation
+
+The “UMIs removed” aggregate hub above required valid UMI + cellular barcode but did **not** require MAPQ 255, did not check the GX tag, and did not check exon overlap criteria.
+
 # Mouse tissue development bulk RNA-seq co-expression clusters
 
 [1 - Keratin](He_2020_ENCODE3_RNA/GeneLists/Bulk%20Cluster%201.txt)
