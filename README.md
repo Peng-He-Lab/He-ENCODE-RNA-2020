@@ -14,9 +14,17 @@ Explore the data interactively in the UCSC Cell Browser:
 - [Limb cell atlas data browser](https://cells.ucsc.edu/?ds=mouse-limb)
 
 <details>
-<summary><strong>UCSC Genome Browser track hubs (C1 mouse development paper)</strong></summary>
+<summary><strong>ENCODE data &amp; UCSC Genome Browser track hubs</strong></summary>
 
-These are UCSC Genome Browser track hubs generated during the C1 mouse development paper work (original compilation by Diane Trout). Opening any link should launch UCSC with the hub pre-loaded.
+### ENCODE data
+
+- [ENCODE publication: The changing mouse embryo transcriptome at whole tissue and single-cell resolution](https://www.encodeproject.org/publications/e0d01543-9965-4edb-933c-778a40575cd9/): publication object for He and Williams et al. 2020 (*Nature*). Companion resources include the developmental epigenomic matrix, computed network components, and IDEAS chromatin segmentations.
+- [Bulk RNA-seq dataset (ENCSR574CRQ)](https://www.encodeproject.org/publication-data/ENCSR574CRQ/): RNA-seq of mouse whole tissue embryonic developmental time course (Barbara Wold lab, Caltech).
+- [ENCSR574CRQ metadata and download links](https://www.encodeproject.org/documents/ab75e52f-64d9-4c39-aea0-15372479049d/@@download/attachment/ENCSR574CRQ_metadata.tsv): TSV with sample metadata and download URLs for all files attached to the dataset by default on ENCODE.
+
+### UCSC Genome Browser track hubs
+
+These track hubs were generated during the C1 mouse development paper work (original compilation by Diane Trout). Opening any link should launch UCSC with the hub pre-loaded.
 
 ### Annotation track hubs
 
