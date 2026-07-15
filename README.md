@@ -11,6 +11,7 @@ Scripts to generate the network graphs are [here](https://github.com/hamrhein/mo
 Explore the data interactively in the UCSC Cell Browser:
 
 - [Bulk RNA-seq data browser](https://cells-test.gi.ucsc.edu/?ds=mouse-encode-rna&layout=3)
+- Bulk RNA-seq genomic coverage browser session: [data](https://genome-test.gi.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=Gerardo&hgS_otherUserSessionName=timecourseSignal_track) · [description](https://genome-test.gi.ucsc.edu/cgi-bin/hgTrackUi?db=mm10&g=developmentTimecourseSignalMm10#TRACK_HTML)
 - [Limb cell atlas data browser](https://cells.ucsc.edu/?ds=mouse-limb)
 
 <details>
